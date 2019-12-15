@@ -1,9 +1,10 @@
 # kickback-auto-checkin
 
-This repo is part of Gitcoin's Global Communities hackathon and represents a suggestion for Kickback.events to allow auto-checkin at the events venue.
+This repo is part of Gitcoin's Global Communities hackathon and represents a suggestion for kickback.events to allow auto-checkin at the events venue.
 
 # Problem
-Currently, organizers of kickback events need to manually update the attendance after the event.
+Labor intensive making Kickback unsuitable for large event where check-in is not strict.
+Prone to check-in error by organisers.
 
 # Solution
 Add WalletConnect support on the website for RSVP and also for the check-in.
@@ -34,7 +35,7 @@ These two functions can easily be modified to add further checks such as checkin
 
 # Challenges Resolved
 
-I have tackled challenge 1 and challenge 2 listed in the bounty description. 
+I have tackled challenge 1 and challenge 2 listed in the bounty description.
 
 # Demo Video
 https://www.youtube.com/watch?v=mbaXlCab3tY&feature=youtu.be
