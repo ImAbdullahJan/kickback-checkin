@@ -27,7 +27,7 @@ I have modified [walletconnect-website-example-dapp](https://github.com/WalletCo
 
 The only bits I added are on line [587](https://github.com/hammadtq/kickback-checkin/blob/6aeabf5273c24c0adae4228e2a9bf746b7cfc86f/app/src/App.tsx#L587) where I trigger `this.getDataAxios(signer);` function with the signer address. The example-dapp has a bug due to which signer is not matching the wallet address (I have reported the bug), however, this line can easily be encapsulated in `if(verified)` block.
 
-The function `getDataAxios()` is simply hitting the web-side API to insert the data in the server-side MySQL database.
+The function [`getDataAxios()`](https://github.com/hammadtq/kickback-checkin/blob/4aab80a18f06de11b88bb7657ee75e03d8127217/app/src/App.tsx#L545) is simply hitting the web-side API to insert the data in the server-side MySQL database.
 
 I have included the PHP and MySQL code for the server side as well.
 
