@@ -30,7 +30,11 @@ The function `getDataAxios()` is simply hitting the web-side API to insert the d
 
 I have included the PHP and MySQL code for the server side as well.
 
-These two functions can easily be modified to add further checks such as checking existing RSVP database to verify first if the attendee is walk-in or actually RSVP'ed before! 
+These two functions can easily be modified to add further checks such as checking existing RSVP database to verify first if the attendee is walk-in or actually RSVP'ed before!
+
+# Challenges Resolved
+
+I have tackled challenge 1 and challenge 2 listed in the bounty description. 
 
 # Demo Video
 https://www.youtube.com/watch?v=mbaXlCab3tY&feature=youtu.be
