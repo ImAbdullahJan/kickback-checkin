@@ -10,12 +10,12 @@ This repo is part of Gitcoin's Global Communities hackathon and represents a sug
 Add WalletConnect support on the website for RSVP and also for the check-in.
 
 Flow:
-1 - Add a check-in button under the organizer sign-in on the website.
-2 - The button will show a WalletConnect QR code to the user one pressed.
-3 - User will scan the QR code to connect with the website (Trust or any other mobile supported wallet).
-4 - The website will then automatically trigger a personal_sign request from the user.
-5 - Once user authenticates the request using his/her wallet, the web-app will authenticate the request and will update the attendance at the server-side database.
-6 - A sync script can then be used to update smart contracts.
+1. Add a check-in button under the organizer sign-in on the website.
+2. The button will show a WalletConnect QR code to the user one pressed.
+3. User will scan the QR code to connect with the website (Trust or any other mobile supported wallet).
+4. The website will then automatically trigger a personal_sign request from the user.
+5. Once user authenticates the request using his/her wallet, the web-app will authenticate the request and will update the attendance at the server-side database.
+6. A sync script can then be used to update smart contracts.
 
 As the solution is working from the organizer's own homepage on the Kickback event. Wallet that is being used to checkin can be verified from the RSVP database on the spot and smart contract can be triggered directly.
 
