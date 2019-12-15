@@ -3,8 +3,8 @@
 This repo is part of Gitcoin's Global Communities hackathon and represents a suggestion for kickback.events to allow auto-checkin at the events venue.
 
 # Problem
-Labor intensive making Kickback unsuitable for large event where check-in is not strict.
-Prone to check-in error by organisers.
+1. Labor intensive making Kickback unsuitable for large event where check-in is not strict.
+2. Prone to check-in error by organisers.
 
 # Solution
 Add WalletConnect support on the website for RSVP and also for the check-in.
@@ -33,9 +33,6 @@ I have included the PHP and MySQL code for the server side as well.
 
 These two functions can easily be modified to add further checks such as checking existing RSVP database to verify first if the attendee is walk-in or actually RSVP'ed before!
 
-# Challenges Resolved
-
-I have tackled challenge 1 and challenge 2 listed in the bounty description.
 
 # Demo Video
 https://www.youtube.com/watch?v=mbaXlCab3tY&feature=youtu.be
