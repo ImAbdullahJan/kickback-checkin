@@ -1,8 +1,9 @@
-# WalletConnect Example Dapp
+# Kickback Checkin Dapp
 
 ## Develop
 
 ```bash
+yarn install
 yarn start
 ```
 

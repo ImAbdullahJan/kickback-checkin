@@ -1,5 +1,5 @@
 {
-  "name": "walletconnect-example-dapp",
+  "name": "kickback-checkin-dapp",
   "version": "1.0.0-beta.37",
   "private": true,
   "keywords": [
@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walletconnect/walletconnect-example-dapp.git"
+    "url": "git+https://github.com/hammadtq/kickback-checkin.git"
   },
   "bugs": {
-    "url": "https://github.com/walletconnect/walletconnect-example-dapp/issues"
+    "url": "https://github.com/hammadtq/kickback-checkin/issues"
   },
   "dependencies": {
     "@walletconnect/browser": "^1.0.0-beta.37",

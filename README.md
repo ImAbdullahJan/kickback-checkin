@@ -1,15 +1,40 @@
+# Kickback Checkin Dapp
+
+## Develop
+
+```bash
+cd app
+yarn install
+yarn start
+```
+
+## Test
+
+```bash
+yarn test
+```
+
+## Build
+
+```bash
+yarn build
+```
+
 # kickback-auto-checkin
 
 This repo is part of Gitcoin's Global Communities hackathon and represents a suggestion for kickback.events to allow auto-checkin at the events venue.
 
 # Problem
+
 1. Labor intensive making Kickback unsuitable for large event where check-in is not strict.
 2. Prone to check-in error by organisers.
 
 # Solution
+
 Add WalletConnect support on the website for RSVP and also for the check-in.
 
 Flow:
+
 1. Add a check-in button under the organizer sign-in on the website.
 2. The button will show a WalletConnect QR code to the user one pressed.
 3. User will scan the QR code to connect with the website (Trust or any other mobile supported wallet).
@@ -33,7 +58,7 @@ I have included the PHP and MySQL code for the server side as well.
 
 These two functions can easily be modified to add further checks such as checking existing RSVP database to verify first if the attendee is walk-in or has actually RSVP'ed before!
 
-
 # Demo Video
+
 https://www.youtube.com/watch?v=mbaXlCab3tY&feature=youtu.be
 [<img src="https://img.youtube.com/vi/mbaXlCab3tY/maxresdefault.jpg" width="50%">](https://youtu.be/mbaXlCab3tY)

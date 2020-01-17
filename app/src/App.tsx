@@ -304,83 +304,6 @@ class App extends React.Component<any, any> {
   public toggleModal = () =>
     this.setState({ showModal: !this.state.showModal });
 
-  public testSendTransaction = async () => {
-    const { walletConnector, address, chainId } = this.state;
-
-    if (!walletConnector) {
-      return;
-    }
-
-    // from
-    const from = address;
-
-    // to
-    const to = address;
-
-    // nonce
-    const _nonce = await apiGetAccountNonce(address, chainId);
-    const nonce = sanitizeHex(convertStringToHex(_nonce));
-
-    // gasPrice
-    const gasPrices = await apiGetGasPrices();
-    const _gasPrice = gasPrices.slow.price;
-    const gasPrice = sanitizeHex(
-      convertStringToHex(convertAmountToRawNumber(_gasPrice, 9))
-    );
-
-    // gasLimit
-    const _gasLimit = 21000;
-    const gasLimit = sanitizeHex(convertStringToHex(_gasLimit));
-
-    // value
-    const _value = 0;
-    const value = sanitizeHex(convertStringToHex(_value));
-
-    // data
-    const data = "0x";
-
-    // test transaction
-    const tx = {
-      from,
-      to,
-      nonce,
-      gasPrice,
-      gasLimit,
-      value,
-      data
-    };
-
-    try {
-      // open modal
-      this.toggleModal();
-
-      // toggle pending request indicator
-      this.setState({ pendingRequest: true });
-
-      // send transaction
-      const result = await walletConnector.sendTransaction(tx);
-
-      // format displayed result
-      const formattedResult = {
-        method: "eth_sendTransaction",
-        txHash: result,
-        from: address,
-        to: address,
-        value: "0 ETH"
-      };
-
-      // display result
-      this.setState({
-        walletConnector,
-        pendingRequest: false,
-        result: formattedResult || null
-      });
-    } catch (error) {
-      console.error(error); // tslint:disable-line
-      this.setState({ walletConnector, pendingRequest: false, result: null });
-    }
-  };
-
   public testSignTransaction = async () => {
     const { walletConnector, address, chainId } = this.state;
 
@@ -636,7 +559,7 @@ class App extends React.Component<any, any> {
       },
       primaryType: "Mail",
       domain: {
-        name: "Example Dapp",
+        name: "Kickback Checkin Dapp",
         version: "0.7.0",
         chainId: 1,
         verifyingContract: "0x0000000000000000000000000000000000000000"
